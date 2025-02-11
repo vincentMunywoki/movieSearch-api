@@ -26,7 +26,11 @@ function App() {
         <h1>MoviSpace</h1>
 
         <div className="search">
-          <input placeholder="Search movies" />
+          <input placeholder="Search movies"
+          value="Batman"
+          onChange={() => {}} />
+
+          <img src={SearchIcon} alt='search' onClick= {() => { }} />
         </div>
       </div>
     </>
