@@ -4,7 +4,7 @@ import SearchIcon from './search.svg' // Importing the search icon image
 import MovieCard from './MovieCard' // Importing the MovieCard component to display movie details
 
 // API key for accessing the OMDB API
-const API_URL = 'http://www.omdbapi.com/?apikey=7b30dd88'
+const API_URL = 'https://www.omdbapi.com/?apikey=7b30dd88'
 
 function App() {
   const [movies, setMovies] = useState([]) // State to store the list of movies fetched from the API
