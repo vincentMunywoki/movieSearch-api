@@ -1,7 +1,8 @@
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import SearchIcon from './search.svg'
+import MovieCard from './MovieCard'
 
 // 7b30dd88
 
@@ -16,13 +17,14 @@ const movie = {
 }
 
 function App() {
+  const [movies, setMovies] = useState([])
 
   const searchMovie = async (title)=> {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
 
-    console.log(data.Search);
-  }
+    setMovies(data.Search);
+  };
 
   useEffect(() => {
     searchMovie("Batman")
@@ -41,18 +43,7 @@ function App() {
           <img src={SearchIcon} alt='search' onClick= {() => { }} />
         </div>
 
-        <div className="movie">
-          <div>
-            <p>{movie.Year}</p>
-          </div>
-          <div>
-            <img src={movie.Poster} alt={movie.Title} />
-          </div>
-          <div>
-            <span>{movie.Type}</span>
-            <h3>{movie.Title}</h3>
-          </div>
-        </div>
+        <MovieCard movie={movie} />
       </div>
     </>
   )
