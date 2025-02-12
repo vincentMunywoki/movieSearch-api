@@ -53,7 +53,7 @@ function App() {
             ))}
           </div>
         ) : (
-          // Display this message when no movies are found
+          // This message is Displayed when no movies are found
           <div className="empty">
             <h2>No Movies Found!</h2>
           </div>
