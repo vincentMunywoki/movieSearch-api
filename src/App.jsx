@@ -49,7 +49,7 @@ function App() {
           <div className="container">
             {/* Map through the movies array and render a MovieCard component for each movie */}
             {movies.map((movie) => (
-              <MovieCard key={movie.imdbID} movie={movie} /> // Adding a unique key for each movie
+              <MovieCard key={movie.imdbID} movie={movie} /> // Adding a unique key for each movie.
             ))}
           </div>
         ) : (
