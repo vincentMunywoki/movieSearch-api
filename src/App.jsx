@@ -44,7 +44,7 @@ function App() {
           />
         </div>
 
-        {/* Conditional rendering: Check if movies exist */}
+        {/* Conditional rendering Check if movies exist */}
         {movies?.length > 0 ? (
           <div className="container">
             {/* Map through the movies array and render a MovieCard component for each movie */}
