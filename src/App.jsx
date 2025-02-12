@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react' // Importing React hooks for managing state and side effects
-import './App.css' // Importing CSS for styling the app
+import './App.css' // Import CSS for styling the app
 import SearchIcon from './search.svg' // Importing the search icon image
 import MovieCard from './MovieCard' // Importing the MovieCard component to display movie details
 
