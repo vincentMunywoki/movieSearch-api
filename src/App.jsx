@@ -3,6 +3,7 @@ import './App.css' // Import CSS for styling the app
 import SearchIcon from './search.svg' // Importing the search icon image
 import MovieCard from './MovieCard' // Importing the MovieCard component to display movie details
 
+
 // API key for accessing the OMDB API
 const API_URL = 'https://www.omdbapi.com/?apikey=7b30dd88'
 
