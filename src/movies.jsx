@@ -6,6 +6,7 @@ import MovieCard from './MovieCard' // Importing the MovieCard component to disp
 // API key for accessing the OMDB API
 const API_URL = 'http://www.omdbapi.com/?apikey=7b30dd88'
 
+
 function App() {
   const [movies, setMovies] = useState([]) // State to store the list of movies fetched from the API
   const [searchTerm, setSearchTerm] = useState(""); // State to manage the current search term entered by the user
